@@ -15,7 +15,7 @@ function App() {
   }, []);
   const weather = () => {
     fetch(
-      `http://api.weatherapi.com/v1/forecast.json?key=b7f2e3725257401491350831222501&q=${place}&days=1&aqi=no&alerts=no`
+      `https://api.weatherapi.com/v1/forecast.json?key=b7f2e3725257401491350831222501&q=${place}&days=1&aqi=no&alerts=no`
     )
       .then((res) => res.json())
       .then((data) =>
