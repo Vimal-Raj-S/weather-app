@@ -61,11 +61,6 @@ function App() {
             }
           }}
         />
-        {/* <SearchIcon
-          onClick={weather}
-          fontSize="large"
-          className="search-button"
-        /> */}
       </div>
       <div className="weather-container">
         <div className="top-part">
