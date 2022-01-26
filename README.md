@@ -1,2 +1,2 @@
 
-LINK :  https://weather-app-vr.netlify.app/
+LINK :  https://weather-app-react-01.netlify.app/
