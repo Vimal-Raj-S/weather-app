@@ -53,6 +53,7 @@ function App() {
         <input
           type="text"
           value={place}
+          placeholder="search place....."
           onChange={(e) => setPlace(e.target.value)}
         />
         <SearchIcon
@@ -64,11 +65,11 @@ function App() {
       <div className="weather-container">
         <div className="top-part">
           <h1>{placeinfo.temp?.current}℃</h1>
-        </div>
-        <div className="condition-high-low">
-          <h1>{placeinfo.condition}</h1>
-          <h1>{placeinfo.temp?.high}℃</h1>
-          <h1>{placeinfo.temp?.low}℃</h1>
+          <div className="condition-high-low">
+            <h1>{placeinfo.condition}</h1>
+            <h1>{placeinfo.temp?.high}℃</h1>
+            <h1>{placeinfo.temp?.low}℃</h1>
+          </div>
         </div>
         <h2>
           {placeinfo.name} , {placeinfo.country}
