@@ -55,12 +55,17 @@ function App() {
           value={place}
           placeholder="search place....."
           onChange={(e) => setPlace(e.target.value)}
+          onKeyPress={(e) => {
+            if (e.key === "Enter") {
+              weather();
+            }
+          }}
         />
-        <SearchIcon
+        {/* <SearchIcon
           onClick={weather}
           fontSize="large"
           className="search-button"
-        />
+        /> */}
       </div>
       <div className="weather-container">
         <div className="top-part">
